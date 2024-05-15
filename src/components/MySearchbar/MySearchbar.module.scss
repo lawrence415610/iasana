@@ -1,0 +1,35 @@
+.search__container {
+	display: relative;
+	&--focus {
+		background-color: var(--black);
+		border: 1px solid var(--border);
+		padding: 0.5rem;
+	}
+}
+
+.search__bar {
+	background-color: var(--black);
+	border: 1px solid var(--border);
+	border-radius: 1rem;
+	height: 2rem;
+	width: 60vh;
+	padding-left: 2.3rem;
+	color: var(--text);
+	&:focus {
+		padding-left: 1rem;
+		outline: 1px solid var(--white);
+	}
+}
+
+.search__icon {
+	position: absolute;
+	margin-left: 0.5rem;
+	margin-top: 0.3rem;
+	color: var(--text);
+}
+
+.search__content {
+	margin-top: 5rem;
+	padding: 0.5rem;
+	border-top: 1px solid var(--border);
+}

@@ -1,0 +1,168 @@
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/400.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+
+:root {
+	/* Color styles */
+	--red: #f06a6a;
+	--white: rgba(255, 255, 255, 1);
+	--violet: #9747ff;
+	--danger--text: rgba(226, 109, 126, 1);
+	--indigo: #8d84e8;
+	--coral: #d1395a;
+	--hyperlink: rgba(164, 153, 237, 1);
+	--brink--pink: rgba(255, 114, 127, 1);
+	--magenta: #f9aaef;
+	--bright--coral: #ff7381;
+	--pink: rgba(255, 199, 216, 1);
+	--yellow: #f8df72;
+	--green: #5da283;
+	--yellow--orange: #f1bd6c;
+	--success--text: rgba(102, 168, 139, 1);
+	--turbo: #ffe200;
+	--neptune: rgba(116, 191, 187, 1);
+	--endeavour: #0050a1;
+	--aqua--background: rgba(169, 220, 217, 1);
+	--blue: #4573d2;
+	--aqua: #9ee7e3;
+	--bright--turquoise: rgba(0, 202, 255, 1);
+	--prussian--blue: rgba(0, 41, 85, 1);
+	--science--blue: rgba(0, 112, 225, 1);
+	--selected: rgba(23, 34, 55, 1);
+	--black: rgba(30, 31, 33, 1);
+	--shrouded--hover: rgba(30, 31, 33, 0.75);
+	--dark--gray-2: rgba(42, 43, 45, 1);
+	--border-50: rgba(86, 85, 87, 1);
+	--weak--background: rgba(46, 46, 48, 1);
+	--medium--background: rgba(37, 38, 40, 1);
+	--dark--gray-1: rgba(106, 105, 106, 1);
+	--topbar--background: rgba(54, 54, 57, 1);
+	--text: #d9d9d9;
+	--text-50: rgba(217, 217, 217, 0.5);
+	--text-60: #d9d9d999;
+	--text--weak: rgba(162, 160, 162, 1);
+	--text--weak-50: rgba(162, 160, 162, 0.5);
+	--border: rgba(86, 85, 87, 1);
+	--border-50: rgba(86, 85, 87, 0.5);
+	--dark--gray-2-50: rgba(42, 43, 45, 0.5);
+	--cool--gray: rgba(109, 110, 111, 1);
+	--medium--gray: rgba(175, 171, 172, 1);
+	--medium--background-50: rgba(37, 38, 40, 0.5);
+	--active: rgba(255, 255, 255, 0.1);
+	--yellow--orange-60: rgba(241, 189, 108, 0.6);
+	--yellow-60: rgba(248, 223, 114, 0.6);
+	--search--background: rgba(66, 66, 68, 1);
+
+	/* Text-size styles */
+	/* base size: body (16px) */
+	--heading-1: 2rem;
+	--heading-2: 1.5rem;
+	--heading-3: 1.25rem;
+	--heading-4: 1rem;
+	--body: 1rem;
+	--heading-5: 0.88rem;
+	--heading-6: 0.75rem;
+	--caption: 0.75rem;
+	--link: 0.75rem;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+	font-size: 16px;
+	color: var(--text);
+}
+
+h1 {
+	color: var(--text);
+	font-size: var(--heading-1);
+	font-weight: 300;
+}
+
+h2 {
+	color: var(--text);
+	font-size: var(--heading-2);
+	font-weight: 500;
+}
+
+h3 {
+	color: var(--text);
+	font-size: var(--heading-3);
+	font-weight: 500;
+}
+
+h4 {
+	color: var(--text);
+	font-size: var(--heading-4);
+	font-weight: 500;
+}
+
+h5 {
+	color: var(--text);
+	font-size: var(--heading-5);
+	font-weight: 500;
+}
+
+h6 {
+	color: var(--text);
+	font-size: var(--heading-6);
+	font-weight: 500;
+}
+
+p {
+	color: var(--text);
+	font-size: var(--body);
+	font-weight: 400;
+}
+
+a {
+	color: var(--text);
+	font-size: var(--link);
+	font-weight: 400;
+	text-decoration: none;
+}
+
+caption {
+	color: var(--text);
+	font-size: var(--caption);
+	font-weight: 400;
+}
+
+::-webkit-scrollbar {
+	background-color: transparent;
+	width: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+	background: var(--border-50);
+	border-radius: 0.5rem;
+}
+
+textarea {
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+	background: var(--medium-background);
+	border: 1px solid var(--border-50);
+	border-radius: 0.5rem;
+	padding: 1rem;
+	font-size: 1rem;
+	color: var(--text);
+	outline: none;
+	resize: none;
+	&:hover {
+		border-color: var(--white);
+	}
+	&:focus {
+		border-color: var(--yellow);
+		background-color: var(--medium-background);
+	}
+}

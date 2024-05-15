@@ -1,0 +1,110 @@
+[
+	{
+		"name": "Pam Schowalter",
+		"users": [
+			{
+				"userId": "sampleUserId",
+				"name": "Lawrence Liu",
+				"email": "lawrenceliu@gmail.com"
+			}
+		],
+		"color": "#bce54f",
+		"isStar": false,
+		"description": "description 1",
+		"creator": {
+			"userId": "sampleUserId",
+			"name": "Lawrence Liu",
+			"email": "lawrenceliu@gmail.com"
+		},
+		"createdDate": 1689583345,
+		"allTags": [
+			{
+				"tagId": "sampleTagId",
+				"name": "Sample Tag",
+				"color": "#ffffff"
+			}
+		],
+		"projectId": "project1",
+		"taskListOrder": ["sampleTaskListId"],
+		"tasks": {
+			"sampleTaskId": {
+				"taskId": "sampleTaskId",
+				"name": "New Task",
+				"createdDate": 1689583345,
+				"creator": {
+					"userId": "sampleUserId",
+					"name": "Lawrence Liu",
+					"email": "lawrenceliu@gmail.com"
+				},
+				"isCompleted": false
+			}
+		},
+		"taskLists": {
+			"sampleTaskListId": {
+				"taskListId": "sampleTaskListId",
+				"name": "New Task List",
+				"taskIds": ["sampleTaskId"]
+			}
+		}
+	},
+	{
+		"name": "Albert Herzog DDS",
+		"users": [
+			{
+				"userId": "sampleUserId",
+				"name": "Lawrence Liu",
+				"email": "lawrenceliu@gmail.com"
+			}
+		],
+		"color": "#ac1f0f",
+		"isStar": false,
+		"description": "description 2",
+		"creator": {
+			"userId": "sampleUserId",
+			"name": "Lawrence Liu",
+			"email": "lawrenceliu@gmail.com"
+		},
+		"createdDate": 1689583285,
+		"allTags": [
+			{
+				"tagId": "sampleTagId",
+				"name": "Sample Tag",
+				"color": "#ffffff"
+			}
+		],
+		"projectId": "project2",
+		"taskListOrder": [],
+		"tasks": {},
+		"taskLists": {}
+	},
+	{
+		"name": "Teri Schiller",
+		"users": [
+			{
+				"userId": "sampleUserId",
+				"name": "Lawrence Liu",
+				"email": "lawrenceliu@gmail.com"
+			}
+		],
+		"color": "#0f30b3",
+		"isStar": false,
+		"description": "description 3",
+		"creator": {
+			"userId": "sampleUserId",
+			"name": "Lawrence Liu",
+			"email": "lawrenceliu@gmail.com"
+		},
+		"createdDate": 1689583225,
+		"allTags": [
+			{
+				"tagId": "sampleTagId",
+				"name": "Sample Tag",
+				"color": "#ffffff"
+			}
+		],
+		"projectId": "project3",
+		"taskListOrder": [],
+		"tasks": {},
+		"taskLists": {}
+	}
+]

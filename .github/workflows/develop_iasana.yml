@@ -1,0 +1,41 @@
+name: Blob storage website CI
+
+on:
+    push:
+        branches: [develop]
+
+jobs:
+    deploy:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v3
+              with:
+                  submodules: recursive
+                  fetch-depth: 0
+
+            - uses: azure/login@v1
+              with:
+                  creds: ${{ secrets.IASANA_FRONTEND}}
+
+            - uses: actions/setup-node@v3
+              with:
+                  node-version: 18
+
+            - name: Install dependencies
+              run: |
+                  npm install
+                  npm run build
+              working-directory: .
+
+            - name: Upload to blob storage
+              uses: azure/CLI@v1
+              with:
+                  inlineScript: |
+                      az storage blob upload-batch --account-name lawrenceliudemo --auth-mode key -d '$web' -s ./build --overwrite
+
+            # Azure logout
+            - name: logout
+              run: |
+                  az logout
+              if: always()

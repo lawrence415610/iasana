@@ -1,0 +1,25 @@
+.taskticket__container {
+	border-radius: 0.3rem;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	background-color: var(--medium--background);
+	border: solid 0.1rem var(--border-50);
+	&:hover {
+		border-color: var(--border);
+		cursor: pointer;
+	}
+}
+
+.active {
+	background-color: var(--prussian--blue);
+	border: solid 0.1rem var(--endeavour);
+	&:hover {
+		background-color: var(--prussian--blue);
+		border: solid 0.1rem var(--endeavour);
+	}
+}
+
+.taskticket__main {
+	max-height: 8rem;
+	margin-bottom: 0.5rem;
+}
